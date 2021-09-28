@@ -208,7 +208,7 @@ export default {
         this.total = res.data.total
         const resources = res.data.resources
         if (resources) {
-          const res = await listPermissions({ appID: this.currentApp, limit: 256 })
+          const res = await listPermissions({ appID: this.currentApp, limit: 1000 })
           if (res.ok) {
             this.permissions = res.data.permissions
           }

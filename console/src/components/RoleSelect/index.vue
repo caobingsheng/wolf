@@ -64,7 +64,7 @@ export default {
   },
   methods: {
     async listRoles() {
-      const res = await listRoles({ appID: this.currentApp, limit: 256 })
+      const res = await listRoles({ appID: this.currentApp, limit: 1000 })
       if (res && res.ok) {
         this.roles = res.data.roles
       }
